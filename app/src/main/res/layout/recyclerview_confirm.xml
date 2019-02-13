@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    card_view:cardElevation="7dp"
+    card_view:contentPadding="7dp"
+    card_view:cardCornerRadius="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="center|start"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"/>
+
+           <!-- <TextView
+                android:id="@+id/statusTV"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"/>-->
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/confirmTv"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="center|start"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/notconfirmTv"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"/>
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                card_view:srcCompat="@drawable/rmob"
+                android:contentDescription="@string/mobile"/>
+
+            <TextView
+                android:id="@+id/mobileTV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/compTv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="18sp"/>
+
+        </LinearLayout>-->
+
+        <!--<TextView
+            android:id="@+id/roomtypeTV"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:textAlignment="viewEnd"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="17sp"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="25dp"
+                card_view:srcCompat="@drawable/rcal"
+                android:contentDescription="@string/mobile"/>
+
+            <TextView
+                android:id="@+id/cinTV"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp"
+                android:textColor="#0050f3"
+                android:layout_gravity="start" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="25dp"
+                card_view:srcCompat="@drawable/rcal"
+                android:contentDescription="@string/mobile"/>
+
+            <TextView
+                android:id="@+id/coutTV"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="#8c7304"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+

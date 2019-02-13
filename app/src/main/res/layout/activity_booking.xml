@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#fff">
+
+            <Button
+                android:id="@+id/allbutton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_corner"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:onClick="all"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="#000"
+                android:text="@string/all" />
+
+            <Button
+                android:id="@+id/cnfmbutton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/rounded_corner"
+                android:layout_weight="1"
+                android:onClick="confirm"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="#000"
+                android:text="@string/upcoming" />
+
+            <Button
+                android:id="@+id/cancelbutton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/rounded_corner"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:onClick="canceled"
+                android:textColor="#000"
+                android:text="@string/cancelled" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/recyclerview_booking"/>
+
+        <TextView
+            android:id="@+id/nopetv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:text="@string/no_bookings_found"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|end"
+            app:backgroundTint="#ff0000"
+            android:src="@drawable/cal"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="23dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

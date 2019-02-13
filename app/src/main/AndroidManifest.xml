@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tripNetra.extranet">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".utils.G_Class"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen_Act"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="java-lang-programming"
+                    android:scheme="android-app-google-plus-demo" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login_Main_Act"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiteTheme" />
+        <activity
+            android:name=".Dashboard_Main_Act"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inventory.Inventory_Main_Act"
+            android:parentActivityName=".Dashboard_Main_Act"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Privacy_Policy_Act"
+            android:parentActivityName=".Login_Main_Act"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bookings.Booking_Main_Act"
+            android:label="Supplier Voucher"
+            android:parentActivityName=".Dashboard_Main_Act"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".bookings.Book_Voucher_Act"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.tripnetra.extranet.bookings.Book_Voucher_Act" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".payments.Payment_Reports_Act"
+            android:label="Payment Voucher"
+            android:parentActivityName=".payments.Payment_Main_Act"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".payments.Payment_Voucher_Act"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".payments.Payment_Main_Act"
+            android:parentActivityName=".Dashboard_Main_Act"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inventory.Manage_Inventry_Act"
+            android:label="Manage Inventory"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".utils.FBase_Messaging_Service"
+            android:exported="false"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+
+            <!--
+            <intent-filter>
+                <action android:name=".bookings.Book_Voucher_Act" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo_white" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <activity android:name=".ConfirmActivity" />
+        <activity android:name=".inventory.pack_manage_inventry_Act"></activity>
+    </application>
+
+</manifest>

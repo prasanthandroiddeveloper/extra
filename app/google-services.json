@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "27274272591",
+    "firebase_url": "https://tripnetra-8d3eb.firebaseio.com",
+    "project_id": "tripnetra-8d3eb",
+    "storage_bucket": "tripnetra-8d3eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27274272591:android:dfd092d297122689",
+        "android_client_info": {
+          "package_name": "com.tripNetra.extranet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27274272591-8p1e51sqdgultjsgjoitafonjv3rl954.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tripNetra.extranet",
+            "certificate_hash": "10a55fa3b05c87c4118bda8f536f39796cdc61e8"
+          }
+        },
+        {
+          "client_id": "27274272591-id3poa7jbj8cq91gsn0583ma0qik3pg2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs_SMHQg8foVMEu9CX1IY_zs3TmysovvQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27274272591-id3poa7jbj8cq91gsn0583ma0qik3pg2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
